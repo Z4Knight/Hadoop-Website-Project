@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+	<div class="header">
+		<div class="header-left">
+			<div class="logo">
+				<a href="index.html"><img src="images/beiLogo.jpg" width="40%" alt=""></a>
+			</div>
+			<div class="top-nav">
+				<ul >
+					<li class="active" ><a href="index.html" >首页</a></li>
+					<li><a href="show_date_user_info.jsp" target="content"  class="black">用户分析</a></li>
+					<li><a href="show_date_member_info.jsp"  target="content" class="black1">会员分析</a></li>
+					<li><a href="show_date_session_info.jsp"  target="content" class="black2" >会话分析</a></li>
+					<li><a href="show_hourly_info.jsp"  target="content" class="black3" >Hourly分析</a></li>
+					<li><a href="show_browser_user_info.jsp"  target="content" class="black4" >浏览器访客分析</a></li>
+					<li><a href="show_browser_member_info.jsp"  target="content" class="black5" >浏览器会员分析</a></li>
+					<li><a href="show_browser_session_info.jsp"  target="content" class="black6" >浏览器会话分析</a></li>
+					<li><a href="show_browser_pv_info.jsp"  target="content" class="black7" >浏览器PV分析</a></li>
+					<li><a href="show_date_region_info.jsp"  target="content" class="black8" >地域跳出率分析</a></li>
+					<li><a href="show_date_order_info.jsp"  target="content" class="black9" >订单信息分析</a></li>
+				</ul>
+			</div>
+		</div>
+		<script>
+			$("span.menu").click(function(){
+				$(".top-nav-in ul").slideToggle(500, function(){
+				});
+			});
+		</script>
+	</div>
+	<div class="main">
+		<h1>电商项目报表系统</h1>
+		<iframe id="content" name="content" scrolling="no" src="show_date_user_info.jsp"></iframe>
+	</div>
+</body>
+</html>

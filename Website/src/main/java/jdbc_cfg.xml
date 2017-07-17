@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+	<property>
+		<name>url</name>
+		<value>jdbc:mysql://192.168.0.123/website?useSSL=false</value>
+	</property>
+
+	<property>
+		<name>username</name>
+		<value>root</value>
+	</property>
+	<property>
+		<name>userpwd</name>
+		<value>admin</value>
+	</property>
+
+	<property>
+		<name>driver</name>
+		<value>com.mysql.jdbc.Driver</value>
+	</property>
+
+</configuration>

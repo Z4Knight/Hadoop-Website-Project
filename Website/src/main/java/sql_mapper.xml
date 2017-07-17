@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+	<property>
+		<name>website_1</name>
+		<value>insert into website_date_user_count values(?,?,?,?) ON DUPLICATE KEY UPDATE newval = ?, todayval = ?,totalval = ?</value>
+	</property>
+	
+	<property>
+		<name>website_2</name>
+		<value>insert into website_date_member_count values(?,?,?,?) ON DUPLICATE KEY UPDATE newval = ?, todayval = ?,totalval = ?</value>
+	</property>
+	
+	<property>
+		<name>website_3</name>
+		<value>insert into website_date_browser_user_count values(?,?,?,?,?) ON DUPLICATE KEY UPDATE newval = ?, todayval = ?,totalval = ?</value>
+	</property>
+
+	
+	<property>
+		<name>website_session</name>
+		<value>insert into website_date_session_count values(?,?,?,?) ON DUPLICATE KEY UPDATE ssnumber = ?, ssduration = ?,avgssduration = ?</value>
+	</property>
+</configuration>

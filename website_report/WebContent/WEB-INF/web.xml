@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>website_report</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+    <servlet>
+    <description></description>
+    <display-name>DateUserServlet</display-name>
+    <servlet-name>DateUserServlet</servlet-name>
+    <servlet-class>com.oracle.website.date.user.DateUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DateUserServlet</servlet-name>
+    <url-pattern>/DateUserServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DateMemberServlet</display-name>
+    <servlet-name>DateMemberServlet</servlet-name>
+    <servlet-class>com.oracle.website.date.member.DateMemberServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DateMemberServlet</servlet-name>
+    <url-pattern>/DateMemberServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>DateSessionServlet</display-name>
+    <servlet-name>DateSessionServlet</servlet-name>
+    <servlet-class>com.oracle.website.date.session.DateSessionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DateSessionServlet</servlet-name>
+    <url-pattern>/DateSessionServlet</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <description></description>
+    <display-name>HourlyServlet</display-name>
+    <servlet-name>HourlyServlet</servlet-name>
+    <servlet-class>com.oracle.website.hourly.HourlyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HourlyServlet</servlet-name>
+    <url-pattern>/HourlyServlet</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <description></description>
+    <display-name>DateUserBrowserServlet</display-name>
+    <servlet-name>DateUserBrowserServlet</servlet-name>
+    <servlet-class>com.oracle.website.date.browser.user.DateUserBrowserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DateUserBrowserServlet</servlet-name>
+    <url-pattern>/DateUserBrowserServlet</url-pattern>
+  </servlet-mapping>
+  
+        <servlet>
+    <description></description>
+    <display-name>DateMemberBrowserServlet</display-name>
+    <servlet-name>DateMemberBrowserServlet</servlet-name>
+    <servlet-class>com.oracle.website.date.browser.member.DateMemberBrowserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DateMemberBrowserServlet</servlet-name>
+    <url-pattern>/DateMemberBrowserServlet</url-pattern>
+  </servlet-mapping>
+  
+          <servlet>
+    <description></description>
+    <display-name>DateSessionBrowserServlet</display-name>
+    <servlet-name>DateSessionBrowserServlet</servlet-name>
+    <servlet-class>com.oracle.website.date.browser.session.DateSessionBrowserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DateSessionBrowserServlet</servlet-name>
+    <url-pattern>/DateSessionBrowserServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+            <servlet>
+    <description></description>
+    <display-name>DatePvBrowserServlet</display-name>
+    <servlet-name>DatePvBrowserServlet</servlet-name>
+    <servlet-class>com.oracle.website.date.browser.pv.DatePvBrowserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DatePvBrowserServlet</servlet-name>
+    <url-pattern>/DatePvBrowserServlet</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+    <description></description>
+    <display-name>DateRegionServlet</display-name>
+    <servlet-name>DateRegionServlet</servlet-name>
+    <servlet-class>com.oracle.website.date.region.DateRegionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DateRegionServlet</servlet-name>
+    <url-pattern>/DateRegionServlet</url-pattern>
+  </servlet-mapping>
+  
+       <servlet>
+    <description></description>
+    <display-name>DateOrderServlet</display-name>
+    <servlet-name>DateOrderServlet</servlet-name>
+    <servlet-class>com.oracle.website.date.order.DateOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DateOrderServlet</servlet-name>
+    <url-pattern>/DateOrderServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
